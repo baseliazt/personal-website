@@ -1,22 +1,17 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const manrope = Manrope({
+  subsets: ["latin"], // Adjust subsets if needed
+  weight: ["400", "500", "700"], // Include desired font weights
+  variable: "--font-manrope", // Optional: CSS variable for font family
 });
 
 export const metadata: Metadata = {
   title: "Ilyas Arya",
   description:
-    "Ilyas Arya is a software engineer who builds accessible, inclusive products and digital experiences for the web.",
+    "Ilyas Arya is a software engineer who builds accessible, inclusive products and digital experiences for the web, application.",
 };
 
 export default function RootLayout({
@@ -26,9 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${manrope.variable} antialiased`}>
         {children}
       </body>
     </html>

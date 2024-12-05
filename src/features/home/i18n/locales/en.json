@@ -2,6 +2,7 @@
   "hero": {
     "title": "Ilyas Bashirah",
     "message": "I'm Software Engineer",
+    "description": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
     "account": {
       "items": [
         {
@@ -22,5 +23,37 @@
         }
       ]
     }
+  },
+  "experience": {
+    "items": [
+      {
+        "id": "1",
+        "position": "Senior Frontend Engineer",
+        "period": "2024-Current",
+        "company": "Klafiyo",
+        "company_link": "",
+        "description": "Build and maintain critical components used to construct Klafiyo's frontend, accross whole product. Work closely with cross functional teams, and product manager, to implement and advocate for best practices in web accessibility",
+        "skills": [
+          {
+            "id": "react",
+            "name": "React"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "position": "Senior Frontend Engineer",
+        "period": "2024-2026",
+        "company": "BliBli",
+        "company_link": "",
+        "description": "Build and maintain critical components used to construct Klafiyo's frontend, accross whole product. Work closely with cross functional teams, and product manager, to implement and advocate for best practices in web accessibility",
+        "skills": [
+          {
+            "id": "react",
+            "name": "React"
+          }
+        ]
+      }
+    ]
   }
 }
