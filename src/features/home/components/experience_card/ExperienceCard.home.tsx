@@ -50,6 +50,19 @@ export const ExperienceCardHome = ({
           )}
         >
           {/* badge */}
+          {skills.map((skill, skillIndex) => (
+            <div
+              key={skillIndex}
+              className={clsx(
+                "rounded-[0.5rem]",
+                "px-[0.5rem] py-[0.25rem]",
+                "bg-purple78",
+                "text-[0.75rem] font-semibold text-white"
+              )}
+            >
+              {skill.name}
+            </div>
+          ))}
         </div>
       </div>
     </div>

@@ -37,6 +37,10 @@
           {
             "id": "react",
             "name": "React"
+          },
+          {
+            "id": "websocket",
+            "name": "Websocket"
           }
         ]
       },
