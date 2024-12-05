@@ -1,6 +1,26 @@
 {
   "hero": {
-    "title": "Hi I'm Ilyas Bashirah",
-    "message": "I'm Software Engineer"
+    "title": "Ilyas Bashirah",
+    "message": "I'm Software Engineer",
+    "account": {
+      "items": [
+        {
+          "id": "github",
+          "url": "https://github.com/milyasbpa"
+        },
+        {
+          "id": "linkedin",
+          "url": "https://www.linkedin.com/in/ilyas-arya-b15010328"
+        },
+        {
+          "id": "duolingo",
+          "url": "https://www.linkedin.com/in/ilyas-arya-b15010328"
+        },
+        {
+          "id": "twitter",
+          "url": "https://www.linkedin.com/in/ilyas-arya-b15010328"
+        }
+      ]
+    }
   }
 }
