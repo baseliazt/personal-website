@@ -9,7 +9,8 @@ export const ExperiencesHome = () => {
     <div
       className={clsx(
         "grid grid-cols-1 items-start content-start justify-start justify-items-start gap-[1rem]",
-        "w-full h-screen"
+        "w-full h-screen",
+        "py-[60px]"
       )}
     >
       {dictionaries.experience.items.map((experience, experienceIndex) => (

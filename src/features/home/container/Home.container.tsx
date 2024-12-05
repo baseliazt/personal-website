@@ -65,7 +65,7 @@ export const HomeContainer = () => {
               {dictionaries.hero.description}
             </motion.p>
 
-            <motion.img
+            {/* <motion.img
               src="/images/milyasbpa.png"
               alt="Profile Picture"
               initial={{ x: -100, opacity: 0 }}
@@ -76,7 +76,7 @@ export const HomeContainer = () => {
                 "rounded-[1rem]",
                 "bg-cover"
               )}
-            />
+            /> */}
           </div>
 
           {/* social media */}
@@ -118,8 +118,7 @@ export const HomeContainer = () => {
         <div
           className={clsx(
             "grid grid-cols-1 items-start content-start justify-start justify-items-start",
-            "w-full",
-            "py-[60px]"
+            "w-full"
           )}
         >
           <ExperiencesHome />
