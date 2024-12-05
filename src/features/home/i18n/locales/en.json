@@ -25,6 +25,12 @@
     }
   },
   "experience": {
+    "cta": {
+      "primary": {
+        "children": "View Full Resume",
+        "url": ""
+      }
+    },
     "items": [
       {
         "id": "1",
@@ -57,6 +63,47 @@
             "name": "React"
           }
         ]
+      }
+    ]
+  },
+  "project": {
+    "cta": {
+      "primary": {
+        "children": "View Full Project Archive",
+        "url": "/projects"
+      }
+    },
+    "items": [
+      {
+        "id": "ocr",
+        "name": "OCR",
+        "image_url": "",
+        "link": "",
+        "description": "asdoaksdoakosda",
+        "stack": [
+          {
+            "id": "ates",
+            "name": "sasd"
+          }
+        ]
+      }
+    ]
+  },
+  "blog": {
+    "cta": {
+      "primary": {
+        "children": "View My Article",
+        "url": "/blog"
+      }
+    },
+    "items": [
+      {
+        "id": "1",
+        "name": "Singleton",
+        "image_url": "",
+        "link": "",
+        "description": "asdoaksdoakosda",
+        "tag": ["Design Pattern"]
       }
     ]
   }

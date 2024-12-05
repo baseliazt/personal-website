@@ -2,7 +2,7 @@ import * as React from "react";
 import clsx from "clsx";
 import { motion } from "framer-motion";
 
-export interface ExperienceCardHomeProps {
+export interface ProjectCardHomeProps {
   id?: string;
   position?: string;
   period?: string;
@@ -12,7 +12,7 @@ export interface ExperienceCardHomeProps {
   skills?: { id: string; name: string }[];
 }
 
-export const ExperienceCardHome = ({
+export const ProjectCardHome = ({
   id = "",
   position = "",
   period = "",
@@ -20,7 +20,7 @@ export const ExperienceCardHome = ({
   company_link = "",
   description = "",
   skills = [],
-}: ExperienceCardHomeProps) => {
+}: ProjectCardHomeProps) => {
   return (
     <motion.a
       id={id}
