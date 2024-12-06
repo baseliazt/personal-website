@@ -16,6 +16,14 @@ export const ProjectsHome = () => {
         "py-[60px]"
       )}
     >
+      <motion.h3
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className={clsx("text-[1.5rem] text-grey80 font-semibold")}
+      >
+        {dictionaries.project.title}
+      </motion.h3>
       {dictionaries.project.items.map((project, projectIndex) => (
         <ProjectCardHome
           key={projectIndex}

@@ -3,6 +3,7 @@ import clsx from "clsx";
 import { motion } from "framer-motion";
 import { getDictionaries } from "../../i18n";
 import { ExperienceCardHome } from "../../components/experience_card/ExperienceCard.home";
+import { GoArrowRight } from "react-icons/go";
 
 export const ExperiencesHome = () => {
   const dictionaries = getDictionaries();
@@ -34,6 +35,17 @@ export const ExperiencesHome = () => {
           skills={experience.skills}
         />
       ))}
+      <motion.a
+        href={dictionaries.experience.cta.primary.url}
+        className={clsx(
+          "flex items-center justify-start gap-[0.5rem]",
+          "text-[0.75rem] tablet:text-[0.875rem] font-bold text-grey80",
+          "opacity-80"
+        )}
+      >
+        {dictionaries.experience.cta.primary.children}
+        <GoArrowRight />
+      </motion.a>
     </div>
   );
 };

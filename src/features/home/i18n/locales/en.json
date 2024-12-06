@@ -86,6 +86,7 @@
   },
   "project": {
     "id": "projects",
+    "title": "My Projects",
     "cta": {
       "primary": {
         "children": "View Full Project Archive",
@@ -123,6 +124,7 @@
   },
   "blog": {
     "id": "blogs",
+    "title": "Blogs",
     "cta": {
       "primary": {
         "children": "View My Article",
