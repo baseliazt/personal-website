@@ -28,7 +28,8 @@ export const HomeContainer = () => {
         <div
           className={clsx(
             "grid grid-cols-1 items-stretch content-between justify-start justify-items-start",
-            "w-full h-screen",
+            "w-full",
+            "min-h-screen",
             "py-[60px]"
           )}
         >
@@ -131,8 +132,8 @@ export const HomeContainer = () => {
         <div
           className={clsx(
             "grid grid-cols-1 items-start content-start justify-start justify-items-start",
-            "w-full h-screen"
-            // "overflow-auto",
+            "w-full desktop:h-screen",
+            "overflow-auto",
           )}
         >
           <ExperiencesHome />

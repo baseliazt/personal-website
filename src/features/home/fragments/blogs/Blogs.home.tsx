@@ -10,7 +10,7 @@ export const BlogsHome = () => {
       id={dictionaries.blog.id}
       className={clsx(
         "grid grid-cols-1 items-start content-start justify-start justify-items-start gap-[1rem]",
-        "w-full h-screen",
+        "w-full min-h-screen",
         "py-[60px]"
       )}
     >
