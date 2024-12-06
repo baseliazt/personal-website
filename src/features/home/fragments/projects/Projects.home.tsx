@@ -1,7 +1,9 @@
 import * as React from "react";
 import clsx from "clsx";
+import { motion } from "framer-motion";
 import { getDictionaries } from "../../i18n";
 import { ProjectCardHome } from "../../components/project_card";
+import { GoArrowRight } from "react-icons/go";
 
 export const ProjectsHome = () => {
   const dictionaries = getDictionaries();
@@ -23,6 +25,17 @@ export const ProjectsHome = () => {
           skills={project.stack}
         />
       ))}
+      <motion.a
+        href={dictionaries.project.cta.primary.url}
+        className={clsx(
+          "flex items-center justify-start gap-[0.5rem]",
+          "text-[0.75rem] tablet:text-[0.875rem] font-bold text-grey80",
+          "opacity-80"
+        )}
+      >
+        {dictionaries.project.cta.primary.children}
+        <GoArrowRight />
+      </motion.a>
     </div>
   );
 };

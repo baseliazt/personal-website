@@ -35,7 +35,10 @@ export const ProjectCardHome = ({
     >
       <img
         src={image_url}
-        className={clsx("w-[280px] h-[150px] desktop:w-[100px] dekstop:h-[50px]", "rounded-[0.25rem]")}
+        className={clsx(
+          "w-[280px] h-[150px] desktop:w-[100px] desktop:h-[50px]",
+          "rounded-[0.25rem]"
+        )}
       />
       <div
         className={clsx(
