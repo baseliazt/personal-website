@@ -8,7 +8,7 @@ export interface BlogCardHomeProps {
   company?: string;
   company_link?: string;
   description?: string;
-  skills?: { id: string; name: string }[];
+
   image_url?: string;
 }
 
@@ -17,7 +17,6 @@ export const BlogCardHome = ({
   title = "",
   company_link = "",
   description = "",
-  skills = [],
   image_url = "",
 }: BlogCardHomeProps) => {
   return (
