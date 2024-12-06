@@ -19,7 +19,7 @@ export const HomeContainer = () => {
     >
       <div
         className={clsx(
-          "grid grid-cols-2 justify-center justify-items-center items-start content-start gap-[1.5rem]",
+          "grid grid-cols-1 desktop:grid-cols-2 justify-center justify-items-center items-start content-start gap-[1.5rem]",
           "w-full max-w-6xl"
         )}
       >
