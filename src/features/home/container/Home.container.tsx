@@ -7,6 +7,7 @@ import { SiDuolingo } from "react-icons/si";
 import { ExperiencesHome } from "../fragments/experiences/Experiences.home";
 import { ProjectsHome } from "../fragments/projects";
 import { BlogsHome } from "../fragments/blogs";
+import { MenuHome } from "../fragments/menu";
 
 export const HomeContainer = () => {
   const dictionaries = getDictionaries();
@@ -66,6 +67,7 @@ export const HomeContainer = () => {
               {dictionaries.hero.description}
             </motion.p>
 
+            <MenuHome />
             {/* <motion.img
               src="/images/milyasbpa.png"
               alt="Profile Picture"

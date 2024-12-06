@@ -1,8 +1,6 @@
 import * as React from "react";
 
-export interface IBlogsHomeProps {}
-
-export const BlogsHome = (props: IBlogsHomeProps) => {
+export const BlogsHome = () => {
   return (
     <div>
       <div></div>
