@@ -108,7 +108,7 @@ export const HomeContainer = () => {
                   ease: "easeInOut",
                 }}
                 className={clsx(
-                  "w-[3rem] h-[3rem]",
+                  "w-[2.5rem] h-[2.5rem]",
                   "flex items-center justify-center",
                   "rounded-[0.5rem]",
                   "text-white",
@@ -116,13 +116,13 @@ export const HomeContainer = () => {
                 )}
               >
                 {account.id === "github" ? (
-                  <FaGithub size={24} />
+                  <FaGithub size={20} />
                 ) : account.id === "linkedin" ? (
-                  <FaLinkedin size={24} />
+                  <FaLinkedin size={20} />
                 ) : account.id === "duolingo" ? (
-                  <SiDuolingo size={24} />
+                  <SiDuolingo size={20} />
                 ) : account.id === "twitter" ? (
-                  <FaTwitter size={24} />
+                  <FaTwitter size={20} />
                 ) : null}
               </motion.a>
             ))}
