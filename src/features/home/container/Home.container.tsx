@@ -21,7 +21,8 @@ export const HomeContainer = () => {
       <div
         className={clsx(
           "grid grid-cols-1 desktop:grid-cols-2 justify-center justify-items-center items-start content-start gap-[1.5rem]",
-          "w-full max-w-6xl"
+          "w-full max-w-6xl",
+          "px-[1rem]"
         )}
       >
         <div
@@ -29,43 +30,57 @@ export const HomeContainer = () => {
             "grid grid-cols-1 items-stretch content-between justify-start justify-items-start",
             "w-full h-screen",
             "py-[60px]",
-            "sticky"
           )}
         >
           <div
             className={clsx(
-              "grid grid-cols-1 place-content-start place-items-start",
+              "grid grid-cols-1 place-content-start place-items-start gap-[2rem]",
               "w-full"
             )}
           >
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
+            <div
               className={clsx(
-                "text-[1.25rem] lg:text-[2.5rem] text-grey90 font-semibold"
+                "grid grid-cols-1 place-content-start place-items-start",
+                "w-full"
               )}
             >
-              {dictionaries.hero.title}
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
-              className={clsx(
-                "text-[1rem] lg:text-[2rem] text-purple78 font-semibold"
-              )}
-            >
-              {dictionaries.hero.message}
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.6, ease: "easeOut" }}
-              className={clsx("text-[0.875rem] text-grey90 font-normal")}
-            >
-              {dictionaries.hero.description}
-            </motion.p>
+              <div
+                className={clsx(
+                  "grid grid-cols-1 place-content-start place-items-start",
+                  "w-full"
+                )}
+              >
+                <motion.h1
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  className={clsx(
+                    "text-[1.25rem] lg:text-[2.5rem] text-grey90 font-semibold"
+                  )}
+                >
+                  {dictionaries.hero.title}
+                </motion.h1>
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
+                  className={clsx(
+                    "text-[1rem] lg:text-[2rem] text-purple78 font-semibold"
+                  )}
+                >
+                  {dictionaries.hero.message}
+                </motion.p>
+              </div>
+
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.6, ease: "easeOut" }}
+                className={clsx("text-[0.875rem] text-grey90 font-normal")}
+              >
+                {dictionaries.hero.description}
+              </motion.p>
+            </div>
 
             <MenuHome />
             {/* <motion.img

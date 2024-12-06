@@ -25,7 +25,7 @@ export const ExperienceCardHome = ({
     <motion.a
       id={id}
       className={clsx(
-        "grid grid-cols-[100px_1fr] place-content-start place-items-start gap-[1rem]",
+        "grid grid-cols-1 tablet:grid-cols-[100px_1fr] place-content-start place-items-start gap-[1rem]",
         "w-full",
         "hover:bg-dark13",
         "rounded-[0.5rem]",

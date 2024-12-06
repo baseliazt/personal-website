@@ -17,7 +17,8 @@ export const ProjectsHome = () => {
       {dictionaries.project.items.map((project, projectIndex) => (
         <ProjectCardHome
           key={projectIndex}
-          position={project.name}
+          image_url={project.image_url}
+          name={project.name}
           description={project.description}
           skills={project.stack}
         />

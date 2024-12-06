@@ -12,7 +12,7 @@ export const MenuHome = () => {
   return (
     <div
       className={clsx(
-        "grid grid-cols-1 place-content-start place-items-start gap-[0.5rem]",
+        "grid grid-cols-1 place-content-start place-items-start gap-[1rem]",
         "w-full"
       )}
     >
@@ -27,11 +27,17 @@ export const MenuHome = () => {
             animate={{
               width: activeIds.includes(menu.id) ? "100px" : "50px",
             }}
-            className={clsx("h-[1px]", "bg-[white]")}
+            className={clsx("h-[1px]", "bg-[white]","rounded-[0.5rem]")}
           />
-          <p className={clsx("text-[0.875rem] text-grey90 font-semibold")}>
+          <motion.p
+            animate={{
+              opacity: activeIds.includes(menu.id) ? "100%" : "70%",
+              fontWeight: activeIds.includes(menu.id) ? "700" : "600",
+            }}
+            className={clsx("text-[0.875rem]")}
+          >
             {menu.name}
-          </p>
+          </motion.p>
         </div>
       ))}
     </div>

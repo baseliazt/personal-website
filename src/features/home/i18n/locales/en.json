@@ -95,9 +95,22 @@
       {
         "id": "ocr",
         "name": "OCR",
-        "image_url": "",
+        "image_url": "/images/home/projects/test_1.png",
         "link": "",
-        "description": "asdoaksdoakosda",
+        "description": "Build and maintain critical components used to construct Klafiyo's frontend, accross whole product. Work closely with cross functional teams, and product manager, to implement and advocate for best practices in web accessibility",
+        "stack": [
+          {
+            "id": "ates",
+            "name": "sasd"
+          }
+        ]
+      },
+      {
+        "id": "dest",
+        "name": "Dest",
+        "image_url": "/images/home/projects/test_1.png",
+        "link": "",
+        "description": "Build and maintain critical components used to construct Klafiyo's frontend, accross whole product. Work closely with cross functional teams, and product manager, to implement and advocate for best practices in web accessibility",
         "stack": [
           {
             "id": "ates",
@@ -119,9 +132,17 @@
       {
         "id": "1",
         "name": "Singleton",
-        "image_url": "",
+        "image_url": "/images/home/blogs/test_1.png",
         "link": "",
-        "description": "asdoaksdoakosda",
+        "description": "Build and maintain critical components used to construct Klafiyo's frontend, accross whole product. Work closely with cross functional teams, and product manager, to implement and advocate for best practices in web accessibility",
+        "tag": ["Design Pattern"]
+      },
+      {
+        "id": "1",
+        "name": "Singleton 2",
+        "image_url": "/images/home/blogs/test_1.png",
+        "link": "",
+        "description": "Build and maintain critical components used to construct Klafiyo's frontend, accross whole product. Work closely with cross functional teams, and product manager, to implement and advocate for best practices in web accessibility",
         "tag": ["Design Pattern"]
       }
     ]

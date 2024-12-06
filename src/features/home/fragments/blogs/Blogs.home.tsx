@@ -17,8 +17,9 @@ export const BlogsHome = () => {
       {dictionaries.blog.items.map((project, projectIndex) => (
         <BlogCardHome
           key={projectIndex}
-          position={project.name}
+          title={project.name}
           description={project.description}
+          image_url={project.image_url}
         />
       ))}
     </div>
