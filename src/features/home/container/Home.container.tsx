@@ -104,7 +104,7 @@ export const HomeContainer = () => {
                 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{
-                  duration: 0.3, // Smooth transition
+                  duration: 0.3,
                   ease: "easeInOut",
                 }}
                 className={clsx(
@@ -133,7 +133,7 @@ export const HomeContainer = () => {
           className={clsx(
             "grid grid-cols-1 items-start content-start justify-start justify-items-start",
             "w-full desktop:h-screen",
-            "overflow-auto",
+            "overflow-auto"
           )}
         >
           <ExperiencesHome />
