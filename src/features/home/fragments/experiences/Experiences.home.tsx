@@ -1,5 +1,6 @@
 import * as React from "react";
 import clsx from "clsx";
+import { motion } from "framer-motion";
 import { getDictionaries } from "../../i18n";
 import { ExperienceCardHome } from "../../components/experience_card/ExperienceCard.home";
 
@@ -14,6 +15,14 @@ export const ExperiencesHome = () => {
         "py-[60px]"
       )}
     >
+      <motion.h3
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className={clsx("text-[1.5rem] text-grey80 font-semibold")}
+      >
+        {dictionaries.experience.title}
+      </motion.h3>
       {dictionaries.experience.items.map((experience, experienceIndex) => (
         <ExperienceCardHome
           key={experienceIndex}

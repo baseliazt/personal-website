@@ -42,6 +42,7 @@
   },
   "experience": {
     "id": "experiences",
+    "title": "Work Experiences",
     "cta": {
       "primary": {
         "children": "View Full Resume",
