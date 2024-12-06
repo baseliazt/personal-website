@@ -23,12 +23,11 @@ export const MenuHome = () => {
             "grid grid-flow-col items-center content-center justify-start justify-items-start gap-[0.5rem]"
           )}
         >
-          <div
-            className={clsx(
-              activeIds.includes(menu.id) ? "w-[100px]" : "w-[50px]",
-              "h-[1px]",
-              "bg-[white]"
-            )}
+          <motion.div
+            animate={{
+              width: activeIds.includes(menu.id) ? "100px" : "50px",
+            }}
+            className={clsx("h-[1px]", "bg-[white]")}
           />
           <p className={clsx("text-[0.875rem] text-grey90 font-semibold")}>
             {menu.name}

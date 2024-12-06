@@ -12,6 +12,10 @@
         {
           "id": "projects",
           "name": "Projects"
+        },
+        {
+          "id": "blogs",
+          "name": "Blogs"
         }
       ]
     },
@@ -104,6 +108,7 @@
     ]
   },
   "blog": {
+    "id": "blogs",
     "cta": {
       "primary": {
         "children": "View My Article",
