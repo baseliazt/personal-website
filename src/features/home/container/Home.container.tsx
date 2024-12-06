@@ -29,7 +29,7 @@ export const HomeContainer = () => {
           className={clsx(
             "grid grid-cols-1 items-stretch content-between justify-start justify-items-start",
             "w-full h-screen",
-            "py-[60px]",
+            "py-[60px]"
           )}
         >
           <div
@@ -83,18 +83,6 @@ export const HomeContainer = () => {
             </div>
 
             <MenuHome />
-            {/* <motion.img
-              src="/images/milyasbpa.png"
-              alt="Profile Picture"
-              initial={{ x: -100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, ease: "easeOut", delay: 2.4 }}
-              className={clsx(
-                "w-[10rem] h-[10rem]",
-                "rounded-[1rem]",
-                "bg-cover"
-              )}
-            /> */}
           </div>
 
           {/* social media */}
@@ -109,14 +97,21 @@ export const HomeContainer = () => {
                 key={accountIndex}
                 href={account.url}
                 target="_blank"
-                whileHover={{ scale: 1.1 }}
+                whileHover={{
+                  color: "#A290FC",
+                  scale: 1.1,
+                }}
                 whileTap={{ scale: 0.9 }}
+                transition={{
+                  duration: 0.3, // Smooth transition
+                  ease: "easeInOut",
+                }}
                 className={clsx(
                   "w-[3rem] h-[3rem]",
                   "flex items-center justify-center",
-                  "bg-dark10",
                   "rounded-[0.5rem]",
-                  "text-white"
+                  "text-white",
+                  "hover:border hover:border-dark18"
                 )}
               >
                 {account.id === "github" ? (
