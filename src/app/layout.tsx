@@ -12,6 +12,25 @@ export const metadata: Metadata = {
   title: "Ilyas Arya",
   description:
     "Ilyas Arya is a software engineer who builds accessible, inclusive products and digital experiences for the web, application.",
+  keywords: ["ilyas arya", "ilyas bashirah", "portfolio", "software engineer"],
+  openGraph: {
+    title: "Ilyas Arya",
+    description:
+      "Ilyas Arya is a software engineer who builds accessible, inclusive products and digital experiences for the web, application.",
+    url: "https://personal-website-psi-hazel-83.vercel.app",
+    images: [
+      {
+        url: "https://personal-website-psi-hazel-83.vercel.app/og-image.jpg",
+        width: 800,
+        height: 600,
+        alt: "Og Image Alt",
+      },
+    ],
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://personal-website-psi-hazel-83.vercel.app",
+  },
 };
 
 export default function RootLayout({
@@ -21,9 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.variable} antialiased`}>
-        {children}
-      </body>
+      <body className={`${manrope.variable} antialiased`}>{children}</body>
     </html>
   );
 }
