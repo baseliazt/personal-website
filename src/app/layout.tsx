@@ -44,7 +44,7 @@ export default function RootLayout({
       <body
         className={clsx(
           `${manrope.variable} antialiased`,
-          "bg-[#efefef] dark:bg-[#171717]"
+          "bg-white dark:bg-[#171717]"
         )}
       >
         {children}

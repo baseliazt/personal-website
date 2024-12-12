@@ -8,8 +8,6 @@ export const NavigationApp = () => {
   const { state, dispatch } = React.useContext(AppContext);
   const darkMode = state.theme.mode === "dark";
 
- 
-
   React.useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
@@ -33,9 +31,11 @@ export const NavigationApp = () => {
         "flex items-center justify-center",
         "fixed",
         "top-0",
-        "z-[10]",
+        "z-[20]",
         "w-full",
-        "h-[60px]"
+        "h-[60px]",
+        "px-[1.5rem] desktop:px-0",
+        "bg-white"
       )}
     >
       <div
