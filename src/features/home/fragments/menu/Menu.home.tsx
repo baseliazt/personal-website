@@ -3,6 +3,7 @@ import clsx from "clsx";
 import { getDictionaries } from "../../i18n";
 import { motion } from "framer-motion";
 import useIntersectionObserverForIds from "@/core/utils/ui/hooks/useIntersectionObserverForIds";
+import Link from "next/link";
 
 export const MenuHome = () => {
   const dictionaries = getDictionaries();
@@ -17,7 +18,8 @@ export const MenuHome = () => {
       )}
     >
       {dictionaries.hero.menu.items.map((menu, menuIndex) => (
-        <div
+        <Link
+          href={`#${menu.id}`}
           key={menuIndex}
           className={clsx(
             "grid grid-flow-col items-center content-center justify-start justify-items-start gap-[0.5rem]"
@@ -27,7 +29,7 @@ export const MenuHome = () => {
             animate={{
               width: activeIds.includes(menu.id) ? "100px" : "50px",
             }}
-            className={clsx("h-[1px]", "bg-[white]","rounded-[0.5rem]")}
+            className={clsx("h-[1px]", "bg-[white]", "rounded-[0.5rem]")}
           />
           <motion.p
             animate={{
@@ -38,7 +40,7 @@ export const MenuHome = () => {
           >
             {menu.name}
           </motion.p>
-        </div>
+        </Link>
       ))}
     </div>
   );
