@@ -115,6 +115,7 @@ export const HomeContainer = () => {
                   key={accountIndex}
                   href={account.url}
                   target="_blank"
+                  aria-label={account.id}
                   whileHover={{
                     color: darkMode ? "#A290FC" : "#6E60FA",
                     scale: 1.1,

@@ -29,9 +29,11 @@ export const BlogCardHome = ({
         "rounded-[0.5rem]",
         "px-[1rem] py-[1rem]"
       )}
+      aria-label={id}
       href={company_link}
     >
       <img
+        alt={id}
         src={image_url}
         className={clsx(
           "w-[280px] h-[150px] desktop:w-[100px] desktop:h-[50px]",

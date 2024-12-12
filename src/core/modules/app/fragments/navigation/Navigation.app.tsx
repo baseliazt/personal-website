@@ -49,6 +49,7 @@ export const NavigationApp = () => {
             darkMode ? "text-white" : "text-dark25",
             "border border-grey80 dark:border-dark18"
           )}
+          name="theme"
           onClick={handleClickThemeMode}
         >
           {darkMode ? <FaMoon size={16} /> : <FaSun size={16} />}
