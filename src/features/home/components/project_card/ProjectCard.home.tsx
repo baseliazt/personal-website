@@ -46,7 +46,11 @@ export const ProjectCardHome = ({
           "w-full"
         )}
       >
-        <p className={clsx("text-[0.875rem] font-semibold text-dark18 dark:text-white")}>
+        <p
+          className={clsx(
+            "text-[0.875rem] font-semibold text-dark18 dark:text-white"
+          )}
+        >
           {name}
         </p>
         <p
@@ -70,7 +74,7 @@ export const ProjectCardHome = ({
               className={clsx(
                 "rounded-[0.5rem]",
                 "px-[0.5rem] py-[0.25rem]",
-                "bg-purple78",
+                "bg-purple60 dark:bg-purple78",
                 "text-[0.75rem] font-semibold text-white"
               )}
             >
