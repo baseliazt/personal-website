@@ -165,7 +165,6 @@ export const HomeContainer = () => {
           className={clsx(
             "grid grid-cols-1 items-start content-start justify-start justify-items-start",
             "w-full desktop:h-screen"
-            // "overflow-auto"
           )}
         >
           <ExperiencesHome />

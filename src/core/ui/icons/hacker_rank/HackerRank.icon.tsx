@@ -1,8 +1,6 @@
 import React from "react";
 
-export interface HackerRankProps extends React.HTMLAttributes<SVGElement> {}
-
-export const HackerRank = (props: HackerRankProps) => {
+export const HackerRank = (props: React.HTMLAttributes<SVGElement>) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
