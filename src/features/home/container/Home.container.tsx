@@ -8,6 +8,7 @@ import { ExperiencesHome } from "../fragments/experiences/Experiences.home";
 import { ProjectsHome } from "../fragments/projects";
 import { BlogsHome } from "../fragments/blogs";
 import { MenuHome } from "../fragments/menu";
+import SVGIcon from "@/core/ui/icons";
 
 export const HomeContainer = () => {
   const dictionaries = getDictionaries();
@@ -121,8 +122,11 @@ export const HomeContainer = () => {
                   <FaLinkedin size={20} />
                 ) : account.id === "duolingo" ? (
                   <SiDuolingo size={20} />
-                ) : account.id === "twitter" ? (
-                  <FaTwitter size={20} />
+                ) : account.id === "hackerrank" ? (
+                  <SVGIcon
+                    name="HackerRank"
+                    className={clsx("w-[1.25rem] h-[1.25rem]")}
+                  />
                 ) : null}
               </motion.a>
             ))}
