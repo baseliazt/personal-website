@@ -35,7 +35,7 @@ export const NavigationApp = () => {
         "w-full",
         "h-[60px]",
         "px-[1.5rem] desktop:px-0",
-        "bg-white"
+        "bg-white dark:bg-[#171717]"
       )}
     >
       <div
