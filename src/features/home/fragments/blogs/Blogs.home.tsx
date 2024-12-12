@@ -20,7 +20,7 @@ export const BlogsHome = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className={clsx("text-[1.5rem] text-grey80 font-semibold")}
+        className={clsx("text-[1.5rem] text-grey40 dark:text-grey80 font-semibold")}
       >
         {dictionaries.blog.title}
       </motion.h3>
@@ -36,7 +36,7 @@ export const BlogsHome = () => {
         href={dictionaries.blog.cta.primary.url}
         className={clsx(
           "flex items-center justify-start gap-[0.5rem]",
-          "text-[0.75rem] tablet:text-[0.875rem] font-bold text-grey80",
+          "text-[0.75rem] tablet:text-[0.875rem] font-bold text-dark18 dark:text-grey80",
           "opacity-80"
         )}
       >

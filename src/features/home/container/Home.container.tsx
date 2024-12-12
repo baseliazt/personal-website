@@ -2,18 +2,21 @@ import * as React from "react";
 import clsx from "clsx";
 import { getDictionaries } from "../i18n";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiDuolingo } from "react-icons/si";
 import { ExperiencesHome } from "../fragments/experiences/Experiences.home";
 import { ProjectsHome } from "../fragments/projects";
 import { BlogsHome } from "../fragments/blogs";
 import { MenuHome } from "../fragments/menu";
 import SVGIcon from "@/core/ui/icons";
+import { AppContext } from "@/core/modules/app/context";
 
 export const HomeContainer = () => {
   const dictionaries = getDictionaries();
+  const { state } = React.useContext(AppContext);
+  const darkMode = state.theme.mode === "dark";
   return (
-    <main
+    <div
       className={clsx(
         "grid grid-cols-1 justify-center justify-items-center items-start content-start",
         "w-full"
@@ -57,7 +60,7 @@ export const HomeContainer = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
                   className={clsx(
-                    "text-[1.25rem] lg:text-[2.5rem] text-grey90 font-semibold"
+                    "text-[1.25rem] lg:text-[2.5rem] text-dark18 dark:text-grey90 font-semibold"
                   )}
                 >
                   {dictionaries.hero.title}
@@ -67,7 +70,7 @@ export const HomeContainer = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
                   className={clsx(
-                    "text-[1rem] lg:text-[2rem] text-purple78 font-semibold"
+                    "text-[1rem] lg:text-[2rem] text-purple60 dark:text-purple78 font-semibold"
                   )}
                 >
                   {dictionaries.hero.message}
@@ -78,7 +81,9 @@ export const HomeContainer = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 1.6, ease: "easeOut" }}
-                className={clsx("text-[0.875rem] text-grey90 font-normal")}
+                className={clsx(
+                  "text-[0.875rem] text-dark18 dark:text-grey90 font-medium"
+                )}
               >
                 {dictionaries.hero.description}
               </motion.p>
@@ -100,7 +105,7 @@ export const HomeContainer = () => {
                 href={account.url}
                 target="_blank"
                 whileHover={{
-                  color: "#A290FC",
+                  color: darkMode ? "#A290FC" : "#6E60FA",
                   scale: 1.1,
                 }}
                 whileTap={{ scale: 0.9 }}
@@ -112,8 +117,8 @@ export const HomeContainer = () => {
                   "w-[2.5rem] h-[2.5rem]",
                   "flex items-center justify-center",
                   "rounded-[0.5rem]",
-                  "text-white",
-                  "hover:border hover:border-dark18"
+                  "text-dark25 dark:text-white",
+                  "hover:border hover:border-grey80 dark:hover:border-dark18"
                 )}
               >
                 {account.id === "github" ? (
@@ -145,6 +150,6 @@ export const HomeContainer = () => {
           <BlogsHome />
         </div>
       </div>
-    </main>
+    </div>
   );
 };

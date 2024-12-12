@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
+import clsx from "clsx";
 
 const manrope = Manrope({
   subsets: ["latin"], // Adjust subsets if needed
@@ -40,7 +41,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.variable} antialiased`}>{children}</body>
+      <body
+        className={clsx(
+          `${manrope.variable} antialiased`,
+          "bg-[#efefef] dark:bg-[#171717]"
+        )}
+      >
+        {children}
+      </body>
     </html>
   );
 }

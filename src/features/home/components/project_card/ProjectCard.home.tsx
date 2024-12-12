@@ -26,10 +26,10 @@ export const ProjectCardHome = ({
       className={clsx(
         "grid grid-cols-1 tablet:grid-cols-[100px_1fr] place-content-start place-items-start gap-[1rem]",
         "w-full",
-        "hover:bg-dark13",
+        "hover:bg-grey90 dark:hover:bg-dark13",
         "rounded-[0.5rem]",
         "px-[1rem] py-[1rem]",
-        "opacity-60 hover:opacity-100"
+        "opacity-100 dark:opacity-60 dark:hover:opacity-100"
       )}
       href={link}
     >
@@ -46,10 +46,14 @@ export const ProjectCardHome = ({
           "w-full"
         )}
       >
-        <p className={clsx("text-[0.875rem] font-semibold text-white")}>
+        <p className={clsx("text-[0.875rem] font-semibold text-dark18 dark:text-white")}>
           {name}
         </p>
-        <p className={clsx("text-[0.875rem] font-normal text-grey80")}>
+        <p
+          className={clsx(
+            "text-[0.875rem] font-medium text-dark18 dark:text-grey80"
+          )}
+        >
           {description}
         </p>
 

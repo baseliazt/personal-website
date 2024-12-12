@@ -29,14 +29,18 @@ export const MenuHome = () => {
             animate={{
               width: activeIds.includes(menu.id) ? "100px" : "50px",
             }}
-            className={clsx("h-[1px]", "bg-[white]", "rounded-[0.5rem]")}
+            className={clsx(
+              "h-[1px]",
+              "bg-dark18 dark:bg-[white]",
+              "rounded-[0.5rem]"
+            )}
           />
           <motion.p
             animate={{
               opacity: activeIds.includes(menu.id) ? "100%" : "70%",
               fontWeight: activeIds.includes(menu.id) ? "700" : "600",
             }}
-            className={clsx("text-[0.875rem]")}
+            className={clsx("text-[0.875rem] text-dark18 dark:text-white")}
           >
             {menu.name}
           </motion.p>
