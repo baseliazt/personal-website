@@ -66,38 +66,29 @@ export const HomeContainer = () => {
                     "w-full"
                   )}
                 >
-                  <motion.h1
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
+                  <h1
                     className={clsx(
                       "text-[1.25rem] lg:text-[2.5rem] text-dark18 dark:text-grey90 font-semibold"
                     )}
                   >
                     {dictionaries.hero.title}
-                  </motion.h1>
-                  <motion.p
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
+                  </h1>
+                  <p
                     className={clsx(
                       "text-[1rem] lg:text-[2rem] text-purple60 dark:text-purple78 font-semibold"
                     )}
                   >
                     {dictionaries.hero.message}
-                  </motion.p>
+                  </p>
                 </div>
 
-                <motion.p
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 1.6, ease: "easeOut" }}
+                <p
                   className={clsx(
                     "text-[0.875rem] text-dark18 dark:text-grey90 font-medium"
                   )}
                 >
                   {dictionaries.hero.description}
-                </motion.p>
+                </p>
               </div>
 
               <MenuHome />
